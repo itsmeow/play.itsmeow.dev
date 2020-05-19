@@ -2,7 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import Radium from "radium"
 import ScrollAnimation from "react-animate-on-scroll"
-import useWindowDimensions from "../hooks/useWindowDimensions"
+import useWindowDimensions from "../hooks/useWindowWidth"
+import useWindowWidth from "../hooks/useWindowWidth"
 
 const TextSection = ({
   id,
@@ -14,7 +15,7 @@ const TextSection = ({
   noParagraph,
   titleStyle,
 }) => {
-  const { width } = useWindowDimensions()
+  const width = useWindowWidth()
   const styles = {
     paddingTop: padding,
     paddingBottom: padding,

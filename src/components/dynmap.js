@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import Radium from "radium"
 import StyledButton from "../components/styledButton"
 import DynmapFrame from "./dynmapFrame"
-import KeyboardEventHandler from "react-keyboard-event-handler"
 
 const Dynmap = ({
   title,
@@ -47,13 +46,7 @@ const Dynmap = ({
     }
   }
   return (
-    <KeyboardEventHandler
-      handleKeys={["esc"]}
-      onKeyEvent={(_, _1) => {
-        setOpen(false)
-      }}
-      handleFocusableElements
-    >
+    <>
       <DynmapFrame
         title={open ? title + "-popup" : title}
         src={src}
@@ -110,7 +103,7 @@ const Dynmap = ({
           </StyledButton>
         </div>
       )}
-    </KeyboardEventHandler>
+    </>
   )
 }
 
