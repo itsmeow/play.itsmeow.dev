@@ -43,6 +43,9 @@ module.exports = {
         icon: `src/data/icon.png`,
       },
     },
+    {
+      resolve: "gatsby-plugin-zopfli",
+    },
     `gatsby-plugin-offline`,
   ],
 }
