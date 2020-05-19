@@ -1,0 +1,54 @@
+.banner {
+  display: block;
+  position: relative;
+  max-height: 550px;
+  text-align: center;
+  z-index: -1;
+}
+
+.banner-container {
+  background: linear-gradient(
+    to top,
+    $primary-background,
+    $primary-background,
+    rgba($primary-background, 0.125),
+    transparent,
+    transparent,
+    transparent
+  );
+}
+
+.banner .image-wrapper {
+  max-height: 550px;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+.banner .image-wrapper div {
+  max-height: 550px;
+  max-width: 1280px;
+  overflow: hidden;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-front {
+  position: absolute;
+  bottom: 40%;
+  z-index: 5;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media (max-width: 450px) {
+  .title-front h1 {
+    font-size: 1.5rem;
+  }
+
+  .title-front h4 {
+    font-size: 1.1rem;
+  }
+}

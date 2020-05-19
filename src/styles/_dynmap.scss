@@ -1,0 +1,19 @@
+.map-overlay {
+  position: relative;
+}
+.map-overlay .popup-overlay .popup-content {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  float: left;
+  clear: none;
+}
+.dynmap-frame {
+  position: static;
+}
+.dynmap-frame-popup {
+  background-color: black;
+  position: fixed;
+}
